@@ -159,7 +159,7 @@ export default function FacultadesList() {
                     src={
                       fac.imagen.startsWith("http")
                         ? fac.imagen
-                        : `http://localhost:8000${fac.imagen}`
+                        : `https://examenfinal-u1kw.onrender.com${fac.imagen}`
                     }
                     alt={fac.nombre}
                     className="h-16 w-16 object-cover rounded-xl border border-cyan-200 shadow"
@@ -168,7 +168,9 @@ export default function FacultadesList() {
                 <span className="font-semibold text-gray-900 text-lg sm:text-xl font-sans">
                   {fac.nombre}
                 </span>
-                <span className="text-neutral-500 sm:ml-2">{fac.descripcion}</span>
+                <span className="text-neutral-500 sm:ml-2">
+                  {fac.descripcion}
+                </span>
               </span>
               <span className="flex gap-4 mt-4 sm:mt-0">
                 <button

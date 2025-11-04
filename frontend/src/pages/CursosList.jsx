@@ -190,7 +190,7 @@ export default function CursosList() {
                     src={
                       curso.imagen.startsWith("http")
                         ? curso.imagen
-                        : `http://localhost:8000${curso.imagen}`
+                        : `https://examenfinal-u1kw.onrender.com${curso.imagen}`
                     }
                     alt={curso.nombre}
                     className="h-16 w-16 object-cover rounded-xl border border-cyan-200 mr-2 shadow"
