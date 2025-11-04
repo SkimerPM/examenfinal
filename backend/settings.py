@@ -29,8 +29,9 @@ SECRET_KEY = 'django-insecure-wc&tigk6&8n^^ba^9%ho69y77!5(c-7ud)9@fjkf!l(@+rl1b!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'examenfinal-u1kw.onrender.com',
+]
 
 # Application definition
 
@@ -131,4 +132,6 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = [
+    "https://examenfinal-1-itte.onrender.com"
+]
