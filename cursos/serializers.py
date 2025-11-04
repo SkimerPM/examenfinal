@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import Facultad, Curso
 
 class FacultadSerializer(serializers.ModelSerializer):
+    imagen = serializers.ImageField(required=False)
     class Meta:
         model = Facultad
         fields = '__all__'
