@@ -133,6 +133,8 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CORS_ALLOW_ALL_ORIGINS = [
-    "https://examenfinal-1-itte.onrender.com"
+CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOWED_ORIGINS = [
+    "https://examenfinal-1-itte.onrender.com",
+    "http://localhost:5173",  # opcional para desarrollo local
 ]
