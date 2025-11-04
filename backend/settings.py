@@ -31,6 +31,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'examenfinal-u1kw.onrender.com',
+    'examenfinal-1-itte.onrender.com'
 ]
 
 # Application definition
